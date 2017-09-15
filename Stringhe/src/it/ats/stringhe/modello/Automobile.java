@@ -18,14 +18,27 @@ public class Automobile {
 	
 	// proprietà che memorizzerà la data di produzione dell'automobile
 	private Date dataProduzione;
+	
+	// Chi guida l'automobile?? 
+	private Persona autista;
 
 	public Date getDataProduzione() {
 		return dataProduzione;  // restituisce la dataProduzione
 	}
 
 	
+	public Persona getAutista() {
+		return autista;
+	}
+
+
+	public void setAutista(Persona autista) {
+		this.autista = autista;
+	}
+
+
 	// Metodo costruttore che viene richiamato con new... 
-	public Automobile(String modello, String colore, String marca, String targa,int cilindrata, Date dataProduzione) {
+	public Automobile( String marca, String modello, String colore, String targa,int cilindrata, Date dataProduzione) {
 		this.cilindrata = cilindrata;
 		this.modello = modello;
 		this.colore = colore;
