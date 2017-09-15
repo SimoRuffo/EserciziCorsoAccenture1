@@ -53,5 +53,9 @@ public class Main {
 		// Genera delle stringhe modificabili....
 		StringBuilder stringBuilder = new StringBuilder("ciao");
 		stringBuilder.append(" mondo");  // Append concatena la parola alla fine della stringa
+		
+		// Alternativa simile a StringBuilder c'è StringBuffer....
+		StringBuffer Stringa = new StringBuffer("ciao");
+		Stringa.append(" mondo");
 	}
 }
