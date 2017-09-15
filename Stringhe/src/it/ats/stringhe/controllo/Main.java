@@ -10,6 +10,8 @@ public class Main {
 		String nome = "Giovanni";
 		String nomeDue = "Giovanni";
 
+		// Restituisce "I nomi sono uguali" poiché 
+		// associa il riferimento sempre alla stessa istanza
 		if (nome == nomeDue) {
 			System.out.println("I nomi sono uguali");
 		} else {
@@ -19,13 +21,17 @@ public class Main {
 		String nomeTre = new String("Pippo");
 		String nomeQuattro = new String("Pippo");
 
+		// Qui scrive "I nomi sono diversi" poiché il metodo new
+		// restituisce ogni volta una nuova istanza della stringa
 		if (nomeTre == nomeQuattro) {
 			System.out.println("I nomi sono uguali");
 		} else {
-			System.out.println("I nomi sono diverso");
+			System.out.println("I nomi sono diversi");
 		}
 
+		
 		// Con equals confronto direttamente il valore
+		// e non i riferimenti (non l'indirizzo puntato)
 		if (nomeTre.equals(nomeQuattro)) {
 			System.out.println("I nomi sono uguali");
 		} else {
