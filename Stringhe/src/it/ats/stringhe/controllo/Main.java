@@ -3,6 +3,7 @@ package it.ats.stringhe.controllo;
 import java.util.Date;
 
 import it.ats.stringhe.modello.Automobile;
+import it.ats.stringhe.modello.Persona;
 
 public class Main {
 
@@ -38,7 +39,7 @@ public class Main {
 			System.out.println("I nomi sono diverso");
 		}
 
-		/***************************************************************************/
+		/*********************************************************************************/
 
 		// Creiamo due automobili utilizzando new Automobile(.....)...
 		Automobile fiatUno = new Automobile("Uno", "bianca", "Fiat", "MN245VB", 1450, new Date());
@@ -63,5 +64,12 @@ public class Main {
 		// Alternativa simile a StringBuilder c'è StringBuffer....
 		StringBuffer Stringa = new StringBuffer("ciao");
 		Stringa.append(" mondo");
+		
+		
+		/**********************************************************************************/
+		
+		// Creiamo una nuova persona...
+		Persona marioRossi = new Persona("FTGG432FDRG5", "Mario", "Rossi", 'M', 27);
+		Automobile fiatPunto2 = new Automobile("Fiat", "Punto", "Blue", "NM435JH", 1450, new Date());
 	}
 }
