@@ -19,7 +19,6 @@ public class Automobile {
 	public Date getDataProduzione() {
 		return dataProduzione;
 	}
-	
 
 	public Automobile(int cilindrata, String modello, String colore, String marca, String targa, Date dataProduzione) {
 		this.cilindrata = cilindrata;
@@ -30,7 +29,6 @@ public class Automobile {
 		this.dataProduzione = dataProduzione;
 	}
 
-	
 	public int getCilindrata() {
 		return cilindrata;
 	}
@@ -71,13 +69,35 @@ public class Automobile {
 		this.marca = marca;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Automobile [cilindrata=" + cilindrata + ", modello=" + modello + ", colore=" + colore + ", marca="
 				+ marca + ", targa=" + targa + ", dataProduzione=" + dataProduzione + "]";
 	}
 
-	
-	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((targa == null) ? 0 : targa.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Automobile other = (Automobile) obj;
+		if (targa == null) {
+			if (other.targa != null)
+				return false;
+		} else if (!targa.equals(other.targa))
+			return false;
+		return true;
+	}
+
 }
