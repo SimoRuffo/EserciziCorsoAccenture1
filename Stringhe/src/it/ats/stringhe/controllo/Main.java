@@ -3,6 +3,7 @@ package it.ats.stringhe.controllo;
 import java.util.Date;
 
 import it.ats.stringhe.modello.Automobile;
+import it.ats.stringhe.modello.Libreria;
 import it.ats.stringhe.modello.Libro;
 import it.ats.stringhe.modello.Persona;
 
@@ -79,7 +80,14 @@ public class Main {
 		/*************************************************************************************/
 		
 		Libro libroEspiazione = new Libro("1231jd", "Espiazione", 300, marioRossi);
+		Libro libroGame = new Libro("asd12","Game" ,125 , marioRossi);
 		
+		
+		/**************************************************************************************/
+		
+		Libreria libreriaNazionale = new Libreria("Libreria nazionale", "via Cavour");
+		libreriaNazionale.getSalaUno()[0] = libroEspiazione;
+		libreriaNazionale.getSalaUno()[1] = libroGame;
 		
 	}
 }
