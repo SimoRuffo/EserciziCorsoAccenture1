@@ -4,8 +4,7 @@ import java.util.Date;
 
 public class Automobile {
 
-	// Indica la cilindrata dell'automobile
-	private int cilindrata;
+	
 	// indica il modello dell'automobile
 	private String modello;
 	// Inidica il colore dell'automobile
@@ -14,13 +13,19 @@ public class Automobile {
 	private String marca;
 	private String targa;
 
+	// Indica la cilindrata dell'automobile
+	private int cilindrata;
+	
+	// proprietà che memorizzerà la data di produzione dell'automobile
 	private Date dataProduzione;
 
 	public Date getDataProduzione() {
-		return dataProduzione;
+		return dataProduzione;  // restituisce la dataProduzione
 	}
 
-	public Automobile(int cilindrata, String modello, String colore, String marca, String targa, Date dataProduzione) {
+	
+	// Metodo costruttore che viene richiamato con new... 
+	public Automobile(String modello, String colore, String marca, String targa,int cilindrata, Date dataProduzione) {
 		this.cilindrata = cilindrata;
 		this.modello = modello;
 		this.colore = colore;
@@ -30,23 +35,23 @@ public class Automobile {
 	}
 
 	public int getCilindrata() {
-		return cilindrata;
+		return cilindrata; // restituisce la cilindrata
 	}
 
 	public String getTarga() {
-		return targa;
+		return targa; // restituisce la targa
 	}
 
 	public void setTarga(String targa) {
-		this.targa = targa;
+		this.targa = targa; // Imposta la targa
 	}
 
 	public void setCilindrata(int cilindrata) {
-		this.cilindrata = cilindrata;
+		this.cilindrata = cilindrata;  // Imposta la cilindrata
 	}
 
 	public String getModello() {
-		return modello;
+		return modello;  // Ritorna il modello 
 	}
 
 	public void setModello(String modello) {
