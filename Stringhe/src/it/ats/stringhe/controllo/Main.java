@@ -25,6 +25,13 @@ public class Main {
 			System.out.println("I nomi sono diverso");
 		}
 
+		// Con equals confronto direttamente le parole 
+		if (nomeTre.equals(nomeQuattro)) {
+			System.out.println("I nomi sono uguali");
+		} else {
+			System.out.println("I nomi sono diverso");
+		}
+
 		/***************************************************************************/
 
 		// Creiamo due automobili utilizzando new Automobile(.....)...
