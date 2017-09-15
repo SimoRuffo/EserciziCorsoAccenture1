@@ -3,6 +3,7 @@ package it.ats.stringhe.controllo;
 import java.util.Date;
 
 import it.ats.stringhe.modello.Automobile;
+import it.ats.stringhe.modello.Libro;
 import it.ats.stringhe.modello.Persona;
 
 public class Main {
@@ -71,5 +72,14 @@ public class Main {
 		// Creiamo una nuova persona...
 		Persona marioRossi = new Persona("FTGG432FDRG5", "Mario", "Rossi", 'M', 27);
 		Automobile fiatPunto2 = new Automobile("Fiat", "Punto", "Blue", "NM435JH", 1450, new Date());
+		
+		fiatPunto2.setAutista(marioRossi);
+		System.out.println("L'autista dell'auto è " + fiatPunto2.getAutista().getNome());
+		
+		/*************************************************************************************/
+		
+		Libro libroEspiazione = new Libro("1231jd", "Espiazione", 300, marioRossi);
+		
+		
 	}
 }
