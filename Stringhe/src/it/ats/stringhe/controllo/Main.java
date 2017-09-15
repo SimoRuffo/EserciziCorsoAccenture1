@@ -25,7 +25,7 @@ public class Main {
 			System.out.println("I nomi sono diverso");
 		}
 
-		// Con equals confronto direttamente le parole 
+		// Con equals confronto direttamente il valore
 		if (nomeTre.equals(nomeQuattro)) {
 			System.out.println("I nomi sono uguali");
 		} else {
@@ -35,8 +35,8 @@ public class Main {
 		/***************************************************************************/
 
 		// Creiamo due automobili utilizzando new Automobile(.....)...
-		Automobile fiatUno = new Automobile(1450, "Uno", "bianca", "Fiat", "MN245VB", new Date());
-		Automobile fiatPunto = new Automobile(1450, "Punto", "rossa", "Fiat", "VN535CB", new Date());
+		Automobile fiatUno = new Automobile("Uno", "bianca", "Fiat", "MN245VB", 1450, new Date());
+		Automobile fiatPunto = new Automobile("Punto", "rossa", "Fiat", "VN535CB", 1450, new Date());
 
 		if (fiatUno == fiatPunto) {
 			System.out.println("Le auto sono uguali");
@@ -44,6 +44,14 @@ public class Main {
 			System.out.println("le auto sono diverse");
 		}
 
+		if (fiatUno.equals(fiatPunto)) {
+			System.out.println("Le auto sono uguali");
+		} else {
+			System.out.println("le auto sono diverse");
+		}
+		
+		// Genera delle stringhe modificabili....
+		StringBuilder stringBuilder = new StringBuilder("ciao");
+		stringBuilder.append(" mondo");  // Append concatena la parola alla fine della stringa
 	}
-
 }
